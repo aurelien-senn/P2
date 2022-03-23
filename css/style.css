@@ -7,13 +7,64 @@ font-family: 'Raleway', sans-serif;
 ul{
     list-style-type:none;
 }
+a{
+    text-decoration: none;
+    
+}
+nav a img{
+    height:60px;
+    margin: 30px 0 0 30px;
+}
 i{
+    color:;
+    font-weight:bold;
+}
+header nav{
+    display:flex;
+    justify-content:space-between;    
+}
+header nav ul{
+    display:flex;
+    align-items:right;    
+}
+header nav ul li{
+    margin: 0 30px 0 0px;
     color:grey;
+    padding-top:0px;
+    font-weight:bold;
+    padding-top:30px;  
 }
-header>nav{
-    display:flex;
+header nav ul li:hover{
+    color:blue;
+    border-top:2px solid blue; 
 }
-header>nav>ul{
-    display:flex;
-    align-items:right;
+/* premiere section */
+@media all and (min-width: 728px) and (max-width: 992px){
+
+
+}
+@media all and (max-width: 728px){
+  header nav{
+    flex-direction:column;
+  }
+  header nav ul{
+    justify-content: space-around;
+    
+
+  }
+  header nav ul li{
+      margin-left: auto;
+      margin-right: auto;
+      border-bottom: grey 4px solid;
+    }
+    header nav ul li:hover{
+        border-top:0;
+        border-bottom: blue 4px solid;
+    }
+  header nav a img{
+     width:150px;
+     display:block;
+     margin-left: auto;
+     margin-right: auto;  
+  
 }
