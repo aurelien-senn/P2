@@ -10,6 +10,10 @@ ul{
 i{
     color:grey;
 }
-#star-grey{
-    color:grey;
+header>nav{
+    display:flex;
+}
+header>nav>ul{
+    display:flex;
+    align-items:right;
 }
