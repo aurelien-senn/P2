@@ -3,68 +3,86 @@
 -moz-box-sizing:border-box;
 box-sizing:border-box;
 font-family: 'Raleway', sans-serif;
+font-weight: 600;
 }
-ul{
-    list-style-type:none;
+body{
+    margin: 50px;
 }
 a{
     text-decoration: none;
-    
-}
-nav a img{
-    height:60px;
-    margin: 30px 0 0 30px;
-}
-i{
-    color:;
-    font-weight:bold;
-}
-header nav{
+  }
+
+/*header*/
+header{
     display:flex;
-    justify-content:space-between;    
+    justify-content:space-between;
 }
-header nav ul{
-    display:flex;
-    align-items:right;    
-}
-header nav ul li{
-    margin: 0 30px 0 0px;
+header nav a{
     color:grey;
-    padding-top:0px;
-    font-weight:bold;
-    padding-top:30px;  
-}
-header nav ul li:hover{
-    color:blue;
-    border-top:2px solid blue; 
-}
-/* premiere section */
-@media all and (min-width: 728px) and (max-width: 992px){
-
-
-}
-@media all and (max-width: 728px){
-  header nav{
-    flex-direction:column;
-  }
-  header nav ul{
-    justify-content: space-around;
     
-
-  }
-  header nav ul li{
-      margin-left: auto;
-      margin-right: auto;
-      border-bottom: grey 4px solid;
-    }
-    header nav ul li:hover{
-        border-top:0;
-        border-bottom: blue 4px solid;
-    }
-  header nav a img{
-     width:150px;
-     display:block;
-     margin-left: auto;
-     margin-right: auto;  
-  
+    text-align: center;
+    padding: 0px 25px 0px 25px; 
 }
+
+header a img{
+    height:60px;
+    width: 128px;
+    }
+nav a:hover{
+    border-top:solid #0065fc 4px;
+    color: #0065fc;
+    padding-top:46px;
+}
+
+/* premiere section */
+input{
+    border: none;
+    padding:10px 0 10px 12px;
+    font-family:"Raleway";
+    font-weight: 600;  
+}
+input.buttom{
+    background:#0065fc;
+    border-radius:0 10px 10px 0px;
+    padding-right:15px;
+    color: white;
+}
+input.search{
+    background-color: white;
+    }
+form{
+    border-radius: 10px 0 0 10px;
+    background-color: lightgrey;
+    padding: 0px 0px 0px 15px;
+}
+    /*responsive*/
+
+@media all and (max-width: 768px){
+    body{
+        margin: 0;
+    }
+    header a{
+        display: flex;
+        justify-content: center;
+     
+    }
+    header{
+        flex-direction: column;
+    }
+    header nav {
+        font-size:x-large;
+        display: flex;
+     
+    }
+    header nav a{
+        
+        border-bottom: 2px solid lightgray;
+    }
+    header nav a:hover{
+        border-bottom: 2px solid #0065fc;
+        border-top:0;
+        color: #0065fc;
+        padding-top:0px;
+
+     
+    }
