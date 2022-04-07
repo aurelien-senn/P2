@@ -17,11 +17,17 @@
 <body>
     <header>
         <a href="#">
-            <img src="assets/logo/Booki.png" alt="logo booki">
+            <div class="logo">
+                <img src="assets/logo/Booki@3x.png" alt="logo booki">
+            </div>
         </a>
         <nav>
-            <a href="#hebergements">Hebergements</a>
-            <a href="#activites">Activites</a>
+            <div class="lien-header">
+                <a href="#hebergements">Hébergements</a>
+            </div>
+            <div class="lien-header">
+                <a href="#activites">Activités</a>
+            </div>
         </nav>
 
     </header>
@@ -30,33 +36,54 @@
         <section>
             <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-            <form>
-                <i class="fa-solid fa-location-dot"></i>
-                <input type="search" value="Marseille, France" class="search">
-                <input type="submit" value="Rechercher" class="buttom">
-                <input type="submit" value="" class="fa-solid fa-magnifying-glass">
-            </form>
+            <div class="input">
+                <form>
+
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="search" value="Marseille, France" class="search">
+                    <input type="submit" value="Rechercher" class="buttom">
+                    <input type="submit" value="" class="fa-solid fa-magnifying-glass">
+
+                </form>
+            </div>
             <!-- filtres-->
             <div class="filtres">
                 <h2>Filtres</h2>
                 <div class="list-filtres">
-                    <a href="#">
-                        <i class="fa-solid fa-money-bill-wave"></i>Économique
-                    </a>
-                    <a href="#">
-                        <i class="fa-solid fa-child-reaching"></i>Familial
-                    </a>
-                    <a href="#"><i class="fa-solid fa-heart">
-                        </i>Romantique
-                    </a>
-                    <a href="#">
-                        <i class="fa-solid fa-dog"></i>Animaux autorisés
-                    </a>
+                    <div class="filtre">
+                        <a href="#">
+                            <i class="fa-solid fa-money-bill-wave"></i>Économique
+                        </a>
+                    </div>
+                    <div class="filtre"> <a href="#">
+                            <i class="fa-solid fa-child-reaching"></i>Familial
+                        </a>
+
+                    </div>
+                    <div class="filtre">
+                        <a href="#"><i class="fa-solid fa-heart">
+                            </i>Romantique
+                        </a>
+
+                    </div>
+                    <div class="filtre">
+                        <a href="#">
+                            <i class="fa-solid fa-dog"></i>Animaux autorisés
+                        </a>
+
+                    </div>
+                    <div class="filtre">
+                    </div>
                 </div>
-            </div>
-            <p>
-                <i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville
-            </p>
+
+
+
+                <p>
+                    <i class="fa-solid fa-info"></i>
+                    de 500 logements sont disponibles dans cette ville
+
+                </p>
+
         </section>
         <!-- filtres-->
         <!--hebergement a marseille-->
@@ -155,7 +182,7 @@
 
                                 <div class="figcaption-hebergements">
                                     <h3>Auberge Le panier</h3>
-                                    <p>Nuit à partir de <span class="bold">23€</span>></p>
+                                    <p>Nuit à partir de <span class="bold">23€</span></p>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -207,14 +234,17 @@
                                 <div class="figcaption-populaires">
                                     <figcaption>
                                         <h3>Hotel le soleil du matin</h3>
-                                        <p>Nuit à partir de <span>128€</p>
-                                        <span class="star-populaire">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </span>
+                                        <p>Nuit à partir de 128€</p>
+                                        <div class="stars">
+                                            <div class="under-stars">
+
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
                                     </figcaption>
                                 </div>
                             </div>
@@ -232,11 +262,16 @@
                                     <figcaption>
                                         <h3>Au coeur de l'eau <br>Chambres d'hôtes</h3>
                                         <p>Nuit à partir de <span>71€</p>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                                        <div class="stars">
+                                            <div class="under-stars">
+
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                            </div>
+                                        </div>
                                     </figcaption>
                                 </div>
                             </div>
@@ -254,11 +289,16 @@
                                     <figcaption>
                                         <h3>Hôtel Tout bleu et Blanc</h3>
                                         <p>Nuit à partir de <span>68€</p>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                                        <div class="stars">
+                                            <div class="under-stars">
+
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                            </div>
+                                        </div>
                                     </figcaption>
                                 </div>
                             </div>
@@ -358,4 +398,4 @@
     </footer>
 </body>
 
-</html> -->
+</html>
