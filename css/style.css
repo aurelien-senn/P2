@@ -194,8 +194,8 @@ i.fa-solid.fa-location-dot::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2.779EM;
-    height: 2.779EM;
+    width: 2.7EM;
+    height: 2.7EM;
     
     color: #0065fc;
     border-radius: 50%;
@@ -349,15 +349,13 @@ figure:hover {
 }
 
 .stars {
-    position: relative;
-    height: 20px;
+    display: block;
+    width: 100%;
 
 }
 
 .under-stars {
-    position: absolute;
     bottom: 0;
-
 }
 
 /*activites a marseille*/
@@ -470,7 +468,7 @@ footer article a {
 }
 
 /*responsive*/
-@media all and (min-width: 768px) and (max-width: 992px) {
+@media all and (min-width: 769px) and (max-width: 992px) {
     body {
         overflow-x: hidden;
     }
@@ -491,16 +489,40 @@ footer article a {
         display: flex;
         flex-direction: row;
     }
-.section_hebergements{
-    width: 0;
-    flex-direction: column;
-}
-.section_hebergements a{
-    flex-direction: column;
-}
-
+    .section_heb{
+        display: flex;
+        flex-direction: column;
+    }
+    .section_hebergements{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .figure{
+        display: flex;
+        justify-content: space-evenly;
+    }
     .populaires {
+        
+        width: 100%;
         margin: 20px 0 0 0;
+    }
+    .section_populaires{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .figcaption-populaires {
+        position: relative;
+        font-size:smaller ;
+        padding-right: 5px;
+
+    }
+    .card-container{
+        min-width: 21em;
+    }
+
+    .under-stars {
+        position: absolute;
+        bottom: 5px;
     }
 
     .hebergements {
@@ -533,11 +555,12 @@ footer article a {
         margin: 20px 0 0 0;
     }
     .all-activites{
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-around;
     }
-footer article{
-    margin: 5%%;
-}
+    .activites{
+        width: 100%;
+    }
 }
 
 @media all and (max-width: 768px) {
@@ -726,6 +749,14 @@ footer article{
         font-size: 2em;
 
     }
+    .stars{
+       
+       
+    }
+    .under-stars{
+       
+        padding-bottom: 20px;
+    }
 
     .populaires {
         background-color: lighgrey;
@@ -767,9 +798,6 @@ footer article{
         width: 100%;
 
     }
-
-    .center {}
-
 
     .hebergements {
         order: 2;
@@ -815,6 +843,7 @@ footer article{
 
     .img-hebergements img {
         width: 100%;
+        height: 100%;
         position: absolute;
         left: 50%;
         transform: translate(-50%, 0%);
