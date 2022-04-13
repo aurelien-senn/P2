@@ -15,7 +15,8 @@ body {
     font-size: x-small;
     margin-right: auto;
     margin-left: auto;
-    width: 100.6em;
+    max-width: 99em;
+    
 }
 
 main {
@@ -139,62 +140,72 @@ i.fa-solid.fa-location-dot::before {
 }
 
 /*filtres*/
-.list-filtres {
+.list-filtres{
     display: flex;
+    margin-top: 20px;
+    margin-bottom:20px;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 20px 0 20px 0;
 }
-
-.filtres h2 {
-    font-weight: 900;
+.filtre-h3{
+    margin: 10px;
 }
-
-.filtre a{
-    overflow: hidden;
-    position: relative;
+.filtres{
+    display: flex;
+    align-items: center ;
+    margin-right: 20px;
     font-size: small;
-    border: 2px solid rgb(236, 236, 236);
-    padding: 11px 10px 11px 0px;
-    border-radius: 25px;
-    margin: 15px;
-    z-index: 0;
- 
-
+    font-weight: 900;
+    flex-wrap: wrap;
 }
 .filtre{
-    overflow: hidden;
+    height: 2.7em;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    border: lightgray 2px solid;
+    border-radius:30px;
+   position: relative;
 }
-.filtre a::before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    right: 180px;
-    width: 100%;
+.jauge-remplissage{
+    transition: all 0.3s linear 0s;
+    background:#c5dbfc;
+    width: 0;
     height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius:30px ;
+
+}
+.filtre:hover .jauge-remplissage{
+    width: 100%;
+}
+    
+   
+}
+.filtre:hover::before{
+   
+}
+.filtres i{
+    transform: translate(-3px, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.779EM;
+    height: 2.779EM;
+    
+    color: #0065fc;
+    border-radius: 50%;
     background-color:#c5dbfc;
-    border-radius: 25px;
-    transition: all .5s;
-    z-index:-1;
-    overflow: hidden;
-}
-.filtre a:hover::before{
-    right: 0;
-    border-radius: 25px;
-}
-
-
-.list-filtres i {
-    background-color: #c5dbfc;
-    float: inline-start;
-    padding: 14px;
-    border-radius: 20px;
-    width: 40px;
-    font: 900;
     font-size: small;
-    transform: translate(-1px);
 }
-
+.filtre-texte{
+  padding-left: 10px;
+  padding-right: 15px; 
+}
 .fa-info {
     width: 18px;
     font-weight: 900;
@@ -223,6 +234,7 @@ i.fa-solid.fa-location-dot::before {
     border-radius: 15px;
     padding-top: 15px;
     padding-right: 19px;
+    max-width: 100%;
 
 }
 
@@ -459,11 +471,33 @@ footer article a {
 
 /*responsive*/
 @media all and (min-width: 768px) and (max-width: 992px) {
+    body {
+        overflow-x: hidden;
+    }
+    .container {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
     .all-activites {
+
         display: flex;
         flex-direction: row;
 
     }
+    .center{
+        flex-direction: column;
+    }
+    .section_heb{
+        display: flex;
+        flex-direction: row;
+    }
+.section_hebergements{
+    width: 0;
+    flex-direction: column;
+}
+.section_hebergements a{
+    flex-direction: column;
+}
 
     .populaires {
         margin: 20px 0 0 0;
@@ -498,7 +532,12 @@ footer article a {
         width: 20.79em;
         margin: 20px 0 0 0;
     }
-
+    .all-activites{
+        flex-direction: column;
+    }
+footer article{
+    margin: 5%%;
+}
 }
 
 @media all and (max-width: 768px) {
@@ -570,9 +609,7 @@ footer article a {
     /* search */
 
     section h1 {
-        ;
         font-size: 4em;
-        ;
         padding: 0 40px 0 30px;
     }
 
@@ -649,13 +686,7 @@ footer article a {
 
     }
 
-    .filtre a {
-        margin: 0;
-        font-size: 1.2em;
-        font-weight: 900;
-    }
-
-    .filtres h2 {
+    .filtres h3 {
         font-size: 3.5em;
         font-weight: 900;
         margin: 0;
@@ -664,25 +695,21 @@ footer article a {
 
     .filtres {
         margin: 30px;
-
     }
 
     .filtre {
         margin: 15px;
-
     }
+  
 
     .filtre i {
         color: #0065fc;
-        font-size: 1.2em;
+        font-size: 1em;
         border-radius: 50%;
-        padding: 12px 45px 12px 15px;
-        transform: translate(-5px);
+        padding: 12px 35px 12px 35px;
+            
     }
-    .filtre a::before {
-        background-color: transparent;
-       
-        } 
+    
     /*card centre*/
     .center {
         flex-direction: column;
@@ -722,16 +749,15 @@ footer article a {
         border-radius: 50px 0px 0px 50px;
     }
 
-    .stars {
+    .figcaption-populaires {
         position: relative;
-        height: 160px;
+        height: 15em;
 
     }
 
     .under-stars {
         position: absolute;
         bottom: 0;
-
     }
 
     /* hebergement */
