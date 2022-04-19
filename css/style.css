@@ -3,7 +3,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .fa-creative-commons-sampling-plus:before {
@@ -11,16 +11,14 @@
 }
 
 body {
-
     font-size: x-small;
     margin-right: auto;
     margin-left: auto;
-    max-width: 99em;
-    
+    max-width: 95em;
 }
 
 main {
-    margin: 40px;
+    margin: 20px;
 }
 
 .fa-star {
@@ -47,10 +45,12 @@ h1 {
 
 h2 {
     font-size: small;
+    font-weight: 700;
 }
 
 h3 {
     font-size: x-small;
+    font-weight: 700;
 }
 
 figure {
@@ -61,20 +61,27 @@ figure {
 }
 
 .bold {
-    font-weight: 900;
+    font-weight: 800;
 }
 
 /*header*/
+
+
 header {
     display: flex;
     justify-content: space-between;
-    padding: 49px 0 0 35px;
+    padding: 50px 0 0 10px;
 }
 
 header nav a {
+    text-align: center;
     color: grey;
     text-align: center;
-    padding: 0px 25px 0px 0px;
+    padding: 0px 10px 0px 10px;
+}
+
+.logo img {
+    width: 8em;
 }
 
 header nav {
@@ -82,9 +89,17 @@ header nav {
 }
 
 nav a:hover {
-    border-top: solid #0065fc 5px;
+    border-top: solid #0065fc 3px;
     color: #0065fc;
-    padding-top: 3.7em;
+    padding-top: 4.6em;
+}
+
+.lightweight {
+    font-weight: 400;
+}
+
+h1 {
+    font-weight: 700;
 }
 
 /* search */
@@ -96,9 +111,14 @@ nav a:hover {
     width: 1px;
 }
 
+.filtre-h3 {
+    font-size: ;
+}
+
 input {
     border: 0;
-    padding: 10px;
+    font-weight: 700;
+    font-size: medium;
 }
 
 input.buttom {
@@ -106,7 +126,6 @@ input.buttom {
     border-radius: 0 10px 10px 0px;
     color: white;
     padding: 14px 15px 14px 15px;
-
 }
 
 input.search {
@@ -123,7 +142,7 @@ form i {
     border-radius: 15px 0 0 15px;
     color: black;
     width: 50px;
-    font: 900;
+    font: 800;
     font-size: medium;
     text-align: center;
 }
@@ -140,75 +159,75 @@ i.fa-solid.fa-location-dot::before {
 }
 
 /*filtres*/
-.list-filtres{
+.list-filtres {
     display: flex;
     margin-top: 20px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
-.filtre-h3{
+
+.filtre-h3 {
     margin: 10px;
 }
-.filtres{
+
+.filtres {
     display: flex;
-    align-items: center ;
+    align-items: center;
     margin-right: 20px;
     font-size: small;
-    font-weight: 900;
     flex-wrap: wrap;
 }
-.filtre{
+
+.filtre {
     height: 2.7em;
     display: flex;
     align-items: center;
     margin-right: 20px;
     border: lightgray 2px solid;
-    border-radius:30px;
-   position: relative;
+    border-radius: 30px;
+    position: relative;
 }
-.jauge-remplissage{
+
+.jauge-remplissage {
     transition: all 0.3s linear 0s;
-    background:#c5dbfc;
+    background: #c5dbfc;
     width: 0;
     height: 100%;
     position: absolute;
     left: 0;
     bottom: 0;
     z-index: -1;
-    border-radius:30px ;
-
+    border-radius: 30px;
 }
-.filtre:hover .jauge-remplissage{
+
+.filtre:hover .jauge-remplissage {
     width: 100%;
 }
-    
-   
-}
-.filtre:hover::before{
-   
-}
-.filtres i{
+
+.filtres i {
     transform: translate(-3px, 0);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 2.7EM;
     height: 2.7EM;
-    
     color: #0065fc;
     border-radius: 50%;
-    background-color:#c5dbfc;
+    background-color: #c5dbfc;
     font-size: small;
 }
-.filtre-texte{
-  padding-left: 10px;
-  padding-right: 15px; 
+
+.filtre-texte {
+    padding-left: 10px;
+    padding-right: 15px;
+    font-weight: 800;
 }
+
 .fa-info {
     width: 18px;
-    font-weight: 900;
+    font-weight: 800;
     font-size: x-small;
     border: lightgray solid 1px;
     padding: 3px 6px 3px 6px;
@@ -235,7 +254,6 @@ i.fa-solid.fa-location-dot::before {
     padding-top: 15px;
     padding-right: 19px;
     max-width: 100%;
-
 }
 
 .hebergements h2 {
@@ -243,7 +261,7 @@ i.fa-solid.fa-location-dot::before {
 }
 
 .figcaption-hebergements h3 {
-    font-weight: 900;
+    font-weight: 800;
 }
 
 .figure figure {
@@ -310,7 +328,7 @@ figure:hover {
 }
 
 .figcaption-populaires h3 {
-    font-weight: 900;
+    font-weight: 800;
     font-size: 1.3em;
 }
 
@@ -360,20 +378,23 @@ figure:hover {
 
 /*activites a marseille*/
 .activites {
-    width: 100.6em;
+    width: 90em;
     margin: 40px 0 30px 0;
 }
 
 .all-activites {
     display: flex;
+    flex-direction: row;
     width: 100%;
-    margin: 0 auto;
+}
+
+.under-all-activites {
+    display: flex;
     font-size: xsmall;
 }
 
 .card-activites1 {
     height: 30.93em;
-    margin: 0px 0px 0px 0px;
 }
 
 .card-activites2 {
@@ -397,8 +418,8 @@ figure:hover {
 }
 
 .card-activites1 img {
-    height: 25.9em;
-    width: 20.79em;
+    height: 27em;
+    width: 20.78em;
     object-fit: cover;
     border-radius: 15px 15px 0 0px;
     position: relative;
@@ -407,7 +428,7 @@ figure:hover {
 
 .card-activites2 img {
     height: 12.57em;
-    width: 20.79em;
+    width: 20.78em;
     object-fit: cover;
     border-radius: 15px 15px 0px 0px;
     position: relative;
@@ -416,7 +437,7 @@ figure:hover {
 
 .card-activites3 img {
     height: 8.72em;
-    width: 20.79em;
+    width: 20.78em;
     object-fit: cover;
     border-radius: 15px 15px 0 0px;
     position: relative;
@@ -424,8 +445,8 @@ figure:hover {
 }
 
 .card-activites4 img {
-    height: 9.2em;
-    width: 20.79em;
+    height: 10em;
+    width: 20.78em;
     object-fit: cover;
     border-radius: 15px 15px 0 0px;
     position: relative;
@@ -434,7 +455,7 @@ figure:hover {
 
 .card-activites5 img {
     height: 11.46em;
-    width: 20.79em;
+    width: 20.78em;
     object-fit: cover;
     border-radius: 15px 15px 0 0px;
     position: relative;
@@ -444,6 +465,8 @@ figure:hover {
 
 .activites figcaption {
     padding: 10px 0 10px 10px;
+    font-size: 1.2em;
+    font-weight: 700;
 
 }
 
@@ -455,9 +478,9 @@ footer {
 }
 
 footer article {
-    font-weight: 900;
+    font-weight: 800;
     line-height: 200%;
-    margin-right: 130px;
+    margin-right: 120px;
     margin-left: 20px;
     margin-bottom: 20px;
 
@@ -468,55 +491,75 @@ footer article a {
 }
 
 /*responsive*/
-@media all and (min-width: 769px) and (max-width: 992px) {
+@media all and (min-width: 768px) and (max-width: 992px) {
     body {
         overflow-x: hidden;
     }
+
     .container {
         max-width: 100%;
         overflow-x: hidden;
     }
+
     .all-activites {
 
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+
 
     }
-    .center{
+
+    .under-all-activites {
+        width: 100%;
+        display: flex;
         flex-direction: column;
     }
-    .section_heb{
+
+
+    .center {
+        flex-direction: column;
+
+    }
+
+    .section_heb {
         display: flex;
         flex-direction: row;
     }
-    .section_heb{
+
+    .section_heb {
         display: flex;
         flex-direction: column;
     }
-    .section_hebergements{
+
+    .section_hebergements {
         display: flex;
         justify-content: space-evenly;
     }
-    .figure{
+
+    .figure {
         display: flex;
         justify-content: space-evenly;
     }
+
     .populaires {
-        
+
         width: 100%;
         margin: 20px 0 0 0;
     }
-    .section_populaires{
+
+    .section_populaires {
         flex-direction: row;
         justify-content: space-around;
     }
+
     .figcaption-populaires {
         position: relative;
-        font-size:smaller ;
+        font-size: smaller;
         padding-right: 5px;
 
     }
-    .card-container{
+
+    .card-container {
         min-width: 21em;
     }
 
@@ -554,11 +597,13 @@ footer article a {
         width: 20.79em;
         margin: 20px 0 0 0;
     }
-    .all-activites{
+
+    .all-activites {
         flex-direction: row;
         justify-content: space-around;
     }
-    .activites{
+
+    .activites {
         width: 100%;
     }
 }
@@ -566,6 +611,25 @@ footer article a {
 @media all and (max-width: 768px) {
 
     /* all body */
+
+
+    form {
+        max-width: 100%;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        position: absolute;
+    }
+
+    main {
+        padding: 0;
+        margin: 0;
+        max-width: 900%;
+    }
+
     h3 {
 
         font-size: large;
@@ -576,9 +640,10 @@ footer article a {
     }
 
     body {
+        position: absolute;
         margin-left: 0;
         margin-left: 0;
-        width: 100%;
+        max-width: 100%;
     }
 
     main {
@@ -589,7 +654,7 @@ footer article a {
     /* header */
     .logo {
         margin: auto;
-        width: 6em;
+        width: 12em;
         padding: 30px 0 30px 0;
     }
 
@@ -602,18 +667,22 @@ footer article a {
     }
 
     header a {
-        font-size: 3em;
+
         font-weight: 400;
     }
 
     header nav a:hover {
+
         border-top: 0;
+        font-weight: 600;
 
     }
 
     header nav {
-        width: 100%;
+
         justify-content: space-around;
+        font-size: 2.5em;
+        ;
     }
 
     .lien-header:hover {
@@ -625,13 +694,13 @@ footer article a {
         width: 50%;
         text-align: center;
         padding-left: 5%;
-        padding-bottom: 1.5em;
+        padding-bottom: 1.7em;
         border-bottom: #c5dbfc 5px solid;
     }
 
     /* search */
 
-    section h1 {
+    h1 {
         font-size: 4em;
         padding: 0 40px 0 30px;
     }
@@ -656,19 +725,18 @@ footer article a {
     }
 
     .fa-magnifying-glass {
+        font-size: x-large;
         background: #0065fc;
         color: white;
-        padding: 15px 50px 50px 20px;
+        padding: 20px 20px 20px 20px;
         border-radius: 15px;
-        width: 1.9em;
-        height: 1.9em;
+        width: 2.9em;
+        height: 2.9em;
         position: relative;
         text-align: center;
+
     }
 
-    input.buttom {
-        width: 20em;
-    }
 
     input.search {
         padding: 10px 10px 30PX 10px;
@@ -685,8 +753,8 @@ footer article a {
     }
 
     .input {
-        width: 55em;
-        margin: auto;
+        text-align: center;
+
     }
 
     .fa-info {
@@ -711,7 +779,7 @@ footer article a {
 
     .filtres h3 {
         font-size: 3.5em;
-        font-weight: 900;
+        font-weight: 800;
         margin: 0;
 
     }
@@ -723,16 +791,16 @@ footer article a {
     .filtre {
         margin: 15px;
     }
-  
+
 
     .filtre i {
         color: #0065fc;
         font-size: 1em;
         border-radius: 50%;
         padding: 12px 35px 12px 35px;
-            
+
     }
-    
+
     /*card centre*/
     .center {
         flex-direction: column;
@@ -745,16 +813,12 @@ footer article a {
     }
 
     .populaires h2 {
-        font-weight: 900;
+        font-weight: 800;
         font-size: 2em;
+    }
 
-    }
-    .stars{
-       
-       
-    }
-    .under-stars{
-       
+    .under-stars {
+
         padding-bottom: 20px;
     }
 
@@ -820,7 +884,7 @@ footer article a {
     }
 
     .figcaption-hebergements h3 {
-        font-weight: 900;
+        font-weight: 800;
     }
 
     .figure figure {
@@ -866,10 +930,14 @@ footer article a {
     .tittre-activites h2 {
         font-size: xx-large;
         padding-left: 20px;
-        font-weight: 900;
+        font-weight: 800;
     }
 
     .all-activites {
+        flex-direction: column;
+    }
+
+    .under-all-activites {
         flex-direction: column;
     }
 
@@ -899,7 +967,7 @@ footer article a {
     .activites figcaption {
         font-size: x-large;
         padding-top: 25px;
-        font-weight: 900;
+        font-weight: 800;
     }
 
 
@@ -912,6 +980,6 @@ footer article a {
 
     footer h3 {
         font-size: xx-large;
-        font-weight: 900;
+        font-weight: 800;
     }
 }
