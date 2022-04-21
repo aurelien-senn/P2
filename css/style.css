@@ -76,7 +76,6 @@ header {
 header nav a {
     text-align: center;
     color: grey;
-    text-align: center;
     padding: 0px 10px 0px 10px;
 }
 
@@ -109,10 +108,6 @@ h1 {
     height: 1px;
     overflow: hidden;
     width: 1px;
-}
-
-.filtre-h3 {
-    font-size: ;
 }
 
 input {
@@ -168,8 +163,9 @@ i.fa-solid.fa-location-dot::before {
     flex-wrap: wrap;
 }
 
-.filtre-h3 {
-    margin: 10px;
+.filtre-h3 h3 {
+    margin:0 20px 0 0px;
+    font-size: medium;
 }
 
 .filtres {
@@ -181,7 +177,7 @@ i.fa-solid.fa-location-dot::before {
 }
 
 .filtre {
-    height: 2.7em;
+    height: 2.8em;
     display: flex;
     align-items: center;
     margin-right: 20px;
@@ -207,7 +203,7 @@ i.fa-solid.fa-location-dot::before {
 }
 
 .filtres i {
-    transform: translate(-3px, 0);
+    transform: translate(-6px, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -257,7 +253,7 @@ i.fa-solid.fa-location-dot::before {
 }
 
 .hebergements h2 {
-    padding: 20px 0 7px 20px;
+    padding: 0px 0 7px 20px;
 }
 
 .figcaption-hebergements h3 {
@@ -319,7 +315,6 @@ figure:hover {
 
 .titre-populaires {
     padding: 0px 0px 0px 20px;
-    display: flex:
 }
 
 .titre-populaires h2 i {
@@ -347,7 +342,7 @@ figure:hover {
     width: 10.14em;
     position: relative;
     overflow: hidden;
-    padding: 3px 10px 2px 3px;
+    padding: 3px 10px 0px 3px;
 }
 
 .star-populaire {
@@ -377,9 +372,11 @@ figure:hover {
 }
 
 /*activites a marseille*/
+
 .activites {
     width: 90em;
     margin: 40px 0 30px 0;
+    
 }
 
 .all-activites {
@@ -390,7 +387,6 @@ figure:hover {
 
 .under-all-activites {
     display: flex;
-    font-size: xsmall;
 }
 
 .card-activites1 {
@@ -398,23 +394,22 @@ figure:hover {
 }
 
 .card-activites2 {
-    margin: 0px 20px 20px 20px;
     height: 16.22em;
 }
 
 .card-activites3 {
     height: 12.67em;
-    margin: 0px 20px 0px 20px;
 
 }
 
 .card-activites4 {
     height: 13.8em;
-
+ 
 }
 
 .card-activites5 {
     height: 15.41em;
+    
 }
 
 .card-activites1 img {
@@ -519,11 +514,6 @@ footer article a {
     .center {
         flex-direction: column;
 
-    }
-
-    .section_heb {
-        display: flex;
-        flex-direction: row;
     }
 
     .section_heb {
@@ -653,9 +643,11 @@ footer article a {
 
     /* header */
     .logo {
-        margin: auto;
-        width: 12em;
-        padding: 30px 0 30px 0;
+        text-align: center;
+        padding: 30px 0 30px 30px;
+    }
+    .logo img{
+        width:12em ;
     }
 
     header {
@@ -682,7 +674,6 @@ footer article a {
 
         justify-content: space-around;
         font-size: 2.5em;
-        ;
     }
 
     .lien-header:hover {
@@ -823,7 +814,6 @@ footer article a {
     }
 
     .populaires {
-        background-color: lighgrey;
         width: 100%;
         padding: 0;
         margin: 0;
